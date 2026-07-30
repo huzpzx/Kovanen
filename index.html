@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#7b3f56" />
+  <meta name="description" content="一份会陪你下厨的潮汕芋头饭互动食谱：认识风味、按人数换算食材、逐步烹饪并使用计时器。" />
+  <title>潮汕芋头饭｜一锅粉糯咸香的家常味</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%237b3f56'/%3E%3Cpath d='M13 31h38c0 14-8 22-19 22S13 45 13 31Z' fill='%23f6dfbd'/%3E%3Cpath d='M19 29c4-10 22-10 26 0' fill='none' stroke='%23fff8e8' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='25' cy='25' r='4' fill='%23b99bc7'/%3E%3Ccircle cx='36' cy='24' r='5' fill='%23b99bc7'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <nav class="nav" aria-label="主导航">
+    <div class="wrap nav-inner">
+      <div class="brand"><span class="brand-mark">芋</span><span>潮汕家常味</span></div>
+      <div class="nav-links">
+        <a href="#story">认识它</a><a href="#recipe">备料</a><a href="#steps">开煮</a><a href="#tips">技巧</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="wrap hero">
+      <div>
+        <span class="eyebrow">一锅饭，也是一桌乡味</span>
+        <h1>潮汕<span>芋头饭</span></h1>
+        <p class="lead">粉糯的芋头、煸香的五花肉、香菇与虾米，和米饭一起焖到油润入味。它不是配菜，也不只是主食，而是潮汕家庭里一锅端上桌的踏实满足。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#recipe">开始备料 <span>↓</span></a>
+          <button class="btn btn-secondary" id="printRecipe">打印食谱</button>
+        </div>
+        <div class="hero-facts">
+          <div class="fact"><strong>约 50 分钟</strong><span>从备料到开饭</span></div>
+          <div class="fact"><strong>咸香粉糯</strong><span>传统家常风味</span></div>
+          <div class="fact"><strong>一锅完成</strong><span>电饭煲友好</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="一碗热腾腾的潮汕芋头饭插画">
+        <div class="sun"></div>
+        <div class="steam"><i></i><i></i><i></i></div>
+        <div class="bowl">
+          <div class="bowl-base"></div>
+          <div class="rice">
+            <span class="cube taro" style="left:8%;top:34%;--r:-12deg"></span>
+            <span class="cube taro" style="left:38%;top:10%;--r:8deg"></span>
+            <span class="cube taro" style="right:7%;top:35%;--r:15deg"></span>
+            <span class="cube pork" style="left:23%;top:48%;--r:7deg"></span>
+            <span class="cube pork" style="right:28%;top:51%;--r:-9deg"></span>
+            <span class="cube mushroom" style="left:14%;top:12%;--r:0deg"></span>
+            <span class="cube mushroom" style="right:20%;top:16%;--r:0deg"></span>
+            <span class="cube scallion" style="left:52%;top:48%;--r:25deg"></span>
+            <span class="cube scallion" style="left:70%;top:20%;--r:-18deg"></span>
+            <span class="cube scallion" style="left:31%;top:20%;--r:14deg"></span>
+          </div>
+          <div class="bowl-line"></div>
+          <div class="seal">潮味</div>
+        </div>
+      </div>
+    </header>
+
+    <section id="story">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">认识这碗饭</div><h2>从芋香里，吃到潮汕人的家常</h2></div>
+          <p class="section-note">潮汕芋头饭常被归入“焖饭”或“戈饭”一类。各家配料会变，但先炒香、再同米焖熟的做法，是这碗饭好吃的关键。</p>
+        </div>
+        <div class="story-grid">
+          <article class="story-main">
+            <p class="big">它不是把芋头简单丢进米里煮，而是让每一样食材先“醒香”：五花肉煸出油脂，香菇与虾米炒出鲜味，芋头煎到边缘微黄，再和大米一起焖熟。</p>
+            <p>开盖时，米粒吸饱肉香与鱼露的咸鲜，芋头外形仍在、内里却已经粉糯。最后撒一把芹菜粒、蒜苗或香菜，浓香里多了一点清爽。对许多潮汕家庭来说，它既是秋冬时节的暖胃饭，也是忙碌日子里省事又丰盛的一锅餐。</p>
+          </article>
+          <div class="story-side">
+            <article class="story-card"><div class="icon">🥣</div><h3>一锅成席</h3><p>主食、肉香与蔬菜风味汇在一起，不用再准备许多配菜。</p></article>
+            <article class="story-card"><div class="icon">🌿</div><h3>最后一把青</h3><p>芹菜、蒜苗或香菜要在饭熟后加入，香气会更鲜活。</p></article>
+            <article class="story-card"><div class="icon">🔥</div><h3>先炒再焖</h3><p>芋头先煎，肉与干货先炒香，成品才会粒粒入味而不水塌。</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recipe">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">互动食谱</div><h2>调好人数，照着做就行</h2></div>
+          <p class="section-note">默认按 4 人份计算。拖动人数后，所有食材用量会自动换算；做完一步就勾掉一步。</p>
+        </div>
+
+        <div class="recipe-shell">
+          <aside class="ingredients-panel">
+            <div class="panel-top">
+              <h3>食材清单</h3>
+              <div class="servings-box">
+                <div class="servings-row"><span>用餐人数</span><strong class="servings-value"><span id="servingValue">4</span> 人</strong></div>
+                <input id="servings" type="range" min="2" max="8" value="4" step="1" aria-label="调整用餐人数" />
+              </div>
+            </div>
+            <ul class="ingredient-list" id="ingredientList"></ul>
+            <div class="panel-actions">
+              <button class="mini-btn" id="copyList">复制采购清单</button>
+              <button class="mini-btn" id="resetAll">全部重置</button>
+            </div>
+          </aside>
+
+          <section class="steps-panel" id="steps" style="padding:0">
+            <div class="panel-top">
+              <h3>六步开饭</h3>
+              <div class="progress-wrap">
+                <div class="progress-meta"><span>烹饪进度</span><strong id="progressText">0 / 6</strong></div>
+                <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+              </div>
+            </div>
+            <div class="steps-list" id="stepsList"></div>
+          </section>
+        </div>
+
+        <div class="cook-tools" id="tips">
+          <article class="timer-card">
+            <div class="timer-head"><div><div class="kicker">焖饭计时器</div><div class="timer-title">不必守着锅</div></div><span>⏱️</span></div>
+            <div class="timer-display" id="timerDisplay">20:00</div>
+            <div class="timer-actions">
+              <button class="start" id="timerStart">开始</button>
+              <button id="timerPause">暂停</button>
+              <button id="timerReset">重置</button>
+              <button data-minutes="5">5 分钟</button>
+              <button data-minutes="20">20 分钟</button>
+            </div>
+          </article>
+          <article class="tips-card">
+            <div class="kicker">好吃的三个细节</div>
+            <div class="timer-title">把家常味做得更稳</div>
+            <div class="tip-list">
+              <div class="tip"><span>①</span><div><b>水要少一点</b><br>芋头与配料会带入水分，水量比平时煮饭略少，米粒才不会软烂。</div></div>
+              <div class="tip"><span>②</span><div><b>芋头先煎黄</b><br>表面形成薄壳，焖完不容易碎，香气也更浓。</div></div>
+              <div class="tip"><span>③</span><div><b>鱼露慢慢加</b><br>生抽与虾米已经有咸味，先少放，出锅前尝味再补。</div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ending">
+      <div class="wrap ending-card">
+        <h2>开盖拌匀，芋香升起来，就可以开饭了</h2>
+        <p>让米饭静置五分钟再翻拌，芋头会更完整，锅底的油香也能均匀裹住每一粒米。</p>
+        <a class="btn" href="#recipe">回到食谱</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
